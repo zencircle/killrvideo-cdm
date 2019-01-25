@@ -2,7 +2,6 @@ select * from killrvideo.video_ratings;
 COPY killrvideo.comments_by_user (userid,commentid,comment,videoid) FROM 'killrvideo-cdm/data/comments_by_user.csv' WITH DELIMITER = ',' AND HEADER = TRUE ;
 select COUNT(*) from killrvideo.comments_by_user;
 
-
 select * from killrvideo.comments_by_video;
 COPY killrvideo.comments_by_video (videoid, commentid,comment,userid) FROM 'killrvideo-cdm/data/comments_by_video.csv' WITH DELIMITER = ',' AND HEADER = TRUE ;
 select COUNT(*) from killrvideo.comments_by_video;
