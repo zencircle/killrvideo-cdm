@@ -1,3 +1,6 @@
+//Add keyspace
+CREATE KEYSPACE killrvideo WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+USE killrvideo;
 // User credentials, keyed by email address so we can authenticate
 CREATE TABLE IF NOT EXISTS user_credentials (
     email text,
